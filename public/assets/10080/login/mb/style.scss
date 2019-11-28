@@ -1,0 +1,280 @@
+.vw-act-login {
+
+  .box-login {
+    display: table;
+    position: relative;
+    .btns {
+      margin: calculator(15, vw) auto 0 auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .wrapper-btn {
+      margin: calculator(23, vw) 0 0 0;
+      display: table;
+      position: relative;
+    }
+    .input-com {
+      &:nth-of-type(1) {
+        margin-top: calculator(90, vw);
+      }
+      &:nth-of-type(2) {
+        margin-top: calculator(32, vw);
+      }
+    }
+    .bg {
+      width: calculator(492 * 1.3, vw);
+      height: calculator(590 * 1.3, vw);
+    }
+    .desc {
+      display:block;
+      margin: 4vw auto 0 auto;
+      width: calculator(431*1.3, vw);
+    }
+  }
+
+  .btn-login {
+    display: table;
+    position: absolute;
+    top: 53.8vw;
+    left: 38vw;
+    img {
+      cursor: pointer;
+      width: calculator(180, vw);
+      height: calculator(78, vw);
+    }
+  }
+  
+  .btn_ios {
+    width: 26.8vw;
+    height: 11.6vw;
+    position: absolute;
+    top: 55vw;
+    left: 21vw;
+  }
+
+  .btn_apk {
+    width: 26.8vw;
+    height: 11.46667vw;
+    position: absolute;
+    top: 55vw;
+    left: 51vw;
+  }
+
+  .login-state {
+    font-family: "Calibri";
+    display: table;
+    position: absolute;
+    color: #7d53c6;
+    font-size: 3.7vw;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    top: 78vw;
+  }
+
+  .box-zone {
+    display: table;
+    position: relative;
+    .select {
+      margin-top: calculator(110, vw) !important;
+    }
+    .btn-sdk {
+      margin-top: calculator(45, vw) !important;
+    }
+    .login-bg-box {
+      width: calculator(492*1.3, vw);
+      height: calculator(400, vw);
+    }
+  }
+
+  .btn-close {
+    .close {
+      position: absolute;
+      width: calculator(36, vw);
+      height: calculator(36, vw);
+      left: calculator(560, vw);
+      top: calculator(38, vw);
+    }
+  }
+
+  .select-login {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    margin-top: 17vw; 
+    width: 54vw;
+    height: calculator(74, vw);
+    .login_bg_select {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .login_icon_select_wrapper {
+      width: calculator(74, vw);
+      height: 9.66667vw;
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      .login_icon_select {
+        width: 100%;
+        height: 100%;
+      }
+      .login_select_tri_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login_select_tri {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: calculator(26, vw);
+          height: calculator(16, vw);
+        }
+      }
+    }
+  }
+
+  .select-login {
+    .v-select {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -2px;
+      left: 0;
+      .dropdown-toggle {
+        color: rgb(9, 118, 217);
+        padding: 0 0 6px 15px;
+        height: 100%;
+        border: 0 !important;
+        position: relative;
+        top: 5%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.5vw;
+      }
+      .open-indicator {
+        display: none !important;
+      }
+      .clear {
+        display: none !important;
+      }
+      .selected-tag,
+      .form-control {
+        font-size: calculator(27, vw) !important;
+        color: inherit;
+        height: 90%;
+        max-width: 87%;
+        margin-top: 4px;
+      }
+      .dropdown-menu {
+        margin-top: calculator(4, vw);
+        height: calculator(550, vw);
+        font-size: calculator(27, vw) !important;
+        border: 0;
+      }
+      .option-item {
+        padding: 0 0 0 5px;
+        color: rgb(9, 118, 217);
+      }
+    }
+  }
+
+  .input-login {
+    position: relative;
+    .inside {
+      width: 65vw;
+      display: flex;
+      margin: 0 auto;
+      position: relative;
+      align-items: center;
+      .login_bg_input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .input {
+        width: 45vw;
+        font-size: calculator(28, vw);
+        margin: 0 0 0 1.4vw;
+        color: #0976d9;
+        position: relative;
+        border: 0;
+        outline: none;
+        background: transparent;
+        vertical-align: middle;
+        height: calculator(50*1.6, vw);
+        transform: translate(0, 0);
+      }
+      .prefix {
+        width: calculator(134, vw);
+        padding: 0 0 0 0;
+        font-size: calculator(28, vw);
+        font-weight: bold;
+        color: #0976d9;
+        text-align: center;
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        &::after {
+          content: ":";
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .btn-sdk {
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    .btn {
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      width: 64vw;
+      height: 10vw;
+    }
+  }
+
+  .btn-kakao {
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    .btn {
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      width: calculator(480, vw);
+      height: calculator(78, vw);
+    }
+  }
+
+  .btn-facebook {
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    .btn {
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      width: calculator(480, vw);
+      height: calculator(78, vw);
+    }
+  }
+
+}

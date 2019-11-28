@@ -1,0 +1,54 @@
+@function calculator($num, $unit: px) {
+  @if $unit==vw {
+    @return $num / 750 * 100+vw;
+  }
+
+  @else {
+    @return $num+$unit;
+  }
+}
+
+
+$state_bar_height_pc: 26;
+$state_bar_height_mb: 56;
+$state_bar_font_size_pc: 14;
+$state_bar_font_size_mb: 24;
+$state_bar_login_mr_pc: 15;
+$state_bar_login_mr_mb: 24;
+$state_bar_login_span_plr_pc: 10;
+$state_bar_login_span_plr_mb: 12;
+$state_bar_login_span_ml_pc: 3;
+$state_bar_login_span_ml_mb: 10;
+
+$state_bar_font_size_pc: 14;
+$state_bar_font_size_mb: 24;
+
+
+.none {
+  display: none !important;
+}
+
+.hide {
+  visibility: hidden !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.filling-img {
+  display: block !important;
+}
+.mb .filling-img {
+  width: 100% !important;
+}
+
+.iScrollVerticalScrollbar {
+  z-index: 0 !important;
+}
+
+.vw-act-ui-bg {
+  background-position-x: 0 !important;
+  background-size: 100% !important;
+  min-width: 0 !important;
+}

@@ -1,0 +1,40 @@
+.event0 {
+  .vw-act-gifts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: calculator(250, vw);
+    .gift {
+      text-align: center;
+      &:nth-child(2) {
+        position: relative;
+        left: .2vw;
+        margin: 0 calculator(87, vw);
+      }
+      .reward {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .reward-icon {
+          width: calculator(179, vw);
+        }
+        .reward-name {
+          color: #fff;
+          font-size: 2.4vw;
+          font-weight: 700;
+          /* padding: 1.33333vw 0 0 0; */
+          height: 5vw;
+          /* background: red; */
+          top: 26vw;
+        }
+      }
+      .btn {
+        cursor: pointer;
+        width: 20.53333vw;
+        margin-top: 7vw;
+      }
+    }
+  
+  }
+}

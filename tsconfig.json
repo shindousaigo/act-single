@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "types": [
+      "webpack-env",
+      // "mocha",
+      "chai",
+      "jest"
+    ],
+    "paths": {
+      "src/*": [
+        "src/*"
+      ],
+      "apollo-server/*": [
+        "apollo-server/*"
+      ],
+      "public/*": [
+        "public/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  /* "include": [
+    "src/store/activity"
+  ], */
+  "exclude": [
+    "node_modules",
+    "apollo-server"
+  ]
+}

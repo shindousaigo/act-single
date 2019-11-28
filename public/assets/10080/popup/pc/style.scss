@@ -1,0 +1,46 @@
+.vw-act-popup {
+  z-index: 12;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  .wrap-message {
+    z-index: -1;
+    &:nth-of-type(1) {
+      z-index: 0;
+    }
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    overflow-wrap: break-word;
+    .message {
+      color: #0976d9;
+      padding: 20px 90px 0 90px;
+      font-size: 19px;
+      line-height: 42px;
+      // font-weight: bold;
+      font-family: "Tahoma";
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .btn-close {
+    .close {
+      cursor: pointer;
+      position: absolute;
+      left: 763px;
+      top: 20px;
+
+      transition: transform 0.3s;
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  
+}

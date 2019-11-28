@@ -1,0 +1,30 @@
+.vw-act-copyright {
+  .txt {
+    color: #000;
+    margin: 0.7vw 0 0 2.13333vw;
+    text-align: left;
+    font-size: 2vw;
+    line-height: 3.6vw;
+    // width: 165%;
+    .line1 {
+      line-height: calculator(60, vw);
+      font-size: calculator(30, vw);
+      font-weight: 700;
+    }
+    .company-container {
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
+    }
+    a {
+      color: #faff65;
+      text-decoration: none;
+    }
+    .company {
+      margin-top: 1vw;
+      width: 50vw;
+      position: absolute;
+      left: 25vw;
+    }
+  }
+}

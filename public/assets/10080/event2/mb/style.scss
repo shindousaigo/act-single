@@ -1,0 +1,67 @@
+.event2 {
+  .turntable {
+    position: relative;
+    margin: calculator(304, vw) auto 0 auto;
+    display: table;
+    width: calculator(624, vw);
+    .filling-img {
+      width: calculator(624, vw);
+      transition: transform 5s ease-out;
+    }
+    .pointer {
+      width: calculator(155, vw);
+      position: absolute;
+      top: 28.24vw;
+      left: 31.38vw;  
+      cursor: pointer;
+      &.turning {
+        animation: pointer .25s;
+        @keyframes pointer {
+          from {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(.9);
+          }
+          to {
+            transform: scale(1);
+          }
+        }
+      }
+    
+
+    }
+    $txt_width: 50vw;
+    .txt {
+      // background: rebeccapurple;
+      font-weight: bold;
+      line-height: calculator(48, vw);
+      color: #ff4174;
+      position: absolute;
+
+      width: $txt_width;
+      text-align: right;
+
+      .sp {
+        line-height: 5.7vw;
+        font-size: 4.2vw;
+      }
+    }
+    .l-txt {
+      top: -7vw;
+      left: -2vw;
+      font-size: 5vw;
+      text-align: center;
+      width: 30vw;
+    }
+    .r-txt {
+      top: -13vw;
+      right: -8.3vw;
+      font-size: 3.6vw;
+      text-align: left;
+      width: 15.7vw;
+      line-height: 1.4vw;
+    }
+  }
+  
+}

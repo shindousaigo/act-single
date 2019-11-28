@@ -1,0 +1,259 @@
+.event1 {
+  .container {
+    display: table;
+    margin-top: 144px !important;
+    position: relative;
+  }
+  .msg {
+    display: table;
+    float: left;
+  }
+  .scroll-wrapper {
+    position: absolute;
+    width: 422px;
+    height: 265px;
+    top: 101px;
+    left: 28px;
+    // background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    padding-left: 20px;
+    line-height: 25px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #fd764d
+  }
+  .input-wrapper {
+    position: absolute;
+    width: 425px;
+    left: 40px;
+    // background: rgba(0,0,0,.3);
+    top: 372px;
+
+    .input-msg {
+      float: left;
+      /* width: 285px; */
+      display: table;
+      position: relative;
+      .input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: transparent;
+        border: 0;
+        outline: none;
+        width: 92%;
+        left: 4%;
+        height: 100%;
+        padding: 0;
+        /* margin: 0; */
+        font-size: 18px;
+        color: #fd764d;
+      }
+    }
+    .submit {
+      float: left;
+      margin: -1px 0 0 18px;
+    }
+  }
+  .receive {
+    display: table;
+    float: left;
+    margin: 125px 0 0 -12px;
+    position: relative;
+    .gift {
+      float: left;
+      &.name {
+        font-size: 18px;
+        color: #fff;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .btn {
+      margin: 14px 0 0 3px;
+    }
+  }
+
+  .gifts {
+    display: table;
+    margin: 0 0 0 -4px;
+    float: left;
+    position: relative;
+    .items {
+      width: 100%;
+      position: absolute;
+      left: 41px;
+      top: 53px;
+      .item {
+        position: relative;
+        float: left;
+        margin: 11px 7px;
+        &:nth-child(6) {
+          margin-left: 240px;
+        }
+        .order {
+          position: absolute;
+          left: 4px;
+          top: 6px;
+        }
+        .name {
+          width: 90%;
+          left: 5%;
+          font-size: 13px;
+          top: 72px;
+          height: 29px;
+        }
+      }
+    }
+    .btn {
+      position: absolute;
+      left: 186px;
+      top: 210px;
+      cursor: pointer;
+    }
+  }
+
+  .vw-act-confirm {
+    z-index: 12;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+    .popup-bg-box {
+      width: 820px;
+      height: 260px;
+    }
+  
+    .wrap-message {
+      z-index: -1;
+      &:nth-of-type(1) {
+        z-index: 0;
+      }
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      transform: translateY(-90%);
+      overflow-wrap: break-word;
+  
+      .message {
+        color: #0976d9;
+        padding: 20px 90px 0 90px;
+        font-size: 19px;
+        line-height: 42px;
+        font-family: "Tahoma";
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .btn {
+      position: absolute;
+      cursor: pointer;
+      &.btn-no {
+        bottom: 40px;
+        left: 205px;
+      }
+      &.btn-yes {
+        bottom: 40px;
+        left: 452px;
+      }
+    }
+    .btn-close {
+      .close {
+        cursor: pointer;
+        position: absolute;
+        left: 763px;
+        top: 20px;
+        transition: transform 0.3s;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  
+  .vw-act-name-list {
+    z-index: 12;
+    color: #0976d9;
+    font-size: 18px;
+    font-weight: 700;
+  
+    .iScrollVerticalScrollbar {
+      right: 6px !important;
+    }
+    .iScrollIndicator {
+      background: rgb(47, 146, 252) !important;
+    }
+  
+    .btn-close {
+      .close {
+        cursor: pointer;
+        position: absolute;
+        left: 366px;
+        top: 19px;
+        transition: transform 0.3s;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  
+    .t-wrap {
+      top: 60px;
+      left: 32px;
+    }
+  
+    .t-head {
+      display: table;
+      // background: rgba($color: #000000, $alpha: 0.4);
+      line-height: 48px;
+      .item {
+        float: left;
+        text-align: center;
+        &._1,
+        &._3 {
+          width: 85px;
+        }
+        &._2 {
+          width: 164px;
+        }
+      }
+    }
+    .t-body {
+      position: absolute;
+      height: 248px;
+      width: 345px;
+      overflow: hidden;
+      // background: rgba($color: #000000, $alpha: 0.4);
+      .scroller {
+        position: relative;
+        display: table;
+      }
+      .line {
+        margin: 10px 0;
+        line-height: 18px;
+        // background: rgba($color: #000000, $alpha: 0.4);
+        float: left;
+        .item {
+          float: left;
+          text-align: center;
+          &._1,
+          &._3 {
+            width: 85px;
+          }
+          &._2 {
+            word-break: break-all;
+            width: 164px;
+          }
+        }
+      }
+    }
+  }
+
+
+}

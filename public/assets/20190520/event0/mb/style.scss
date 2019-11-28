@@ -1,0 +1,42 @@
+.event0 {
+  .vw-act-gifts {
+    display: flex;
+    .gift {
+      text-align: center;
+      margin: 0 auto;
+      .reward {
+        display: block;
+        position: relative;
+        float: left;
+        margin: 36vw 4vw;
+        .reward-name {
+          top: 21vw;
+          color: #97dcff;
+          font-size: 3.46667vw;
+          height: 10vw;
+          font-weight: 500;
+          width: 118%;
+          left: -9%;
+          line-height: 5vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          word-break: break-all;
+          position: absolute;
+        }
+        img {
+          border: 1.33333vw solid #fdcd47;
+          width: 16.93333vw;
+        }
+      }
+      .btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 70.66667vw 0 0 35.46667vw;
+        width: 28.93333vw;
+      }
+    }
+  
+  }
+}

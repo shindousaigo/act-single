@@ -1,0 +1,213 @@
+.vw-act-login {
+
+  .box-login {
+    display: table;
+    position: relative;
+    img {
+      width: 80vw;
+      height: 68vw;
+    }
+  }
+
+  .btn-login {
+    position: absolute;
+    top: 38.5vw;
+    left: 44vw;
+    img {
+      width: 21.46667vw;
+      height: 6.4vw;
+    }
+  }
+
+  .input-login {
+    position: relative;
+    &.text {
+      margin-top: 8vw;
+    }
+    &.password {
+      margin-top: 4.26667vw;
+    }
+    .inside {
+      width: 53.6vw;
+      height: 9.33333vw;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      position: relative;
+      .login_bg_input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .input {
+        height: 8.53333vw;
+        width: 40vw;
+        font-size: 4.26667vw;
+        margin: 0 0 0 2.13333vw;
+        transform: translate(0);
+        color: #fff;
+        position: relative;
+        border: 0;
+        outline: none;
+        background: transparent;
+        vertical-align: middle;
+      }
+      .prefix {
+        width: 13.06667vw;
+        padding: 0 0 0 0;
+        font-size: 4.26667vw;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        &::after {
+          content: ":";
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .btn-sdk {
+    margin: 5.06667vw auto 3.06667vw auto;
+    display: table;
+    position: relative;
+    img {
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      width: 53.6vw;
+      height: 10.66667vw;
+    }
+  }
+
+  .btn-facebook {
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    img {
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      width: 53.6vw;
+      height: 10.66667vw;
+    }
+  }
+
+  .box-zone {
+    display: table;
+    position: relative;
+    .login-bg-box {
+      width: 81.33333vw;
+      height: 53.33333vw;
+    }
+    .select {
+      margin-top: 13.33333vw!important;
+    }
+    .btn-sdk {
+      margin-top: 9.33333vw!important;
+    }
+  }
+
+  .select-login {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    width: 62.66667vw;
+    height: 9.33333vw;
+    .login_bg_select {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .login_icon_select_wrapper {
+      width: 10.4vw;
+      height: 8.93333vw;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
+      .login_icon_select {
+        width: 100%;
+        height: 100%;
+      }
+      .login_select_tri_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        .login_select_tri {
+          width: 3.46667vw;
+          height: 2.13333vw;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .v-select {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -2px;
+      left: 0;
+      .dropdown-toggle {
+        color: #fff;
+        padding: 0 0 6px 15px;
+        height: 100%;
+        border: 0 !important;
+        position: relative;
+        top: 5%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.5vw;
+      }
+      .open-indicator {
+        display: none !important;
+      }
+      .clear {
+        display: none !important;
+      }
+      .selected-tag,
+      .form-control {
+        font-size: 3.6vw!important;
+        color: inherit;
+        height: 90%;
+        max-width: 87%;
+        margin-top: 2px;
+      }
+      .dropdown-menu {
+        border: 0;
+        margin-top: calculator(4, vw);
+        height: calculator(550, vw);
+        font-size: calculator(27, vw) !important;
+      }
+      .option-item {
+        padding: 0 0 0 5px;
+        color: #943b0b;
+      }
+    }
+  }
+
+  .login-state {
+    font-family: "Calibri";
+    display: table;
+    position: absolute;
+    color: #7d53c6;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.7vw;
+    top: 78vw;
+  }
+
+
+}

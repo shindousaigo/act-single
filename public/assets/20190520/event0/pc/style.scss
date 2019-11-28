@@ -1,0 +1,38 @@
+.event0 {
+  .vw-act-gifts {
+    float: left;
+    margin: 324px 0 0 52px;
+    .gift {
+      text-align: center;
+      .reward {
+        display: block;
+        position: relative;
+        float: left;
+        margin: 10px 56px 0 30px;
+        .reward-name {
+          position: absolute;
+          color: #97dcff;
+          font-size: 22px;
+          padding: 4px 0 0 0;
+          line-height: 465px;
+          font-weight: 700;
+          text-align: center;
+          position: absolute;
+          width: 170%;
+          left: -35%;
+          word-break: break-all;
+        }
+        img {
+          border: 5px solid #fdcd47;
+        }
+      }
+      .btn {
+        cursor: pointer;
+        position: absolute;
+        right: -11px;
+        top: 437px;
+      }
+    }
+  
+  }
+}

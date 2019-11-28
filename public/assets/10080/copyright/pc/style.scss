@@ -1,0 +1,23 @@
+.vw-act-copyright {
+  .txt {
+    color: #000;
+    margin-top: calculator(5, px);
+    text-align: left;
+    font-size: calculator(18, px);
+    line-height: calculator(26, px);
+    .line1 {
+      line-height: calculator(48, px);
+      font-size: calculator(24, px);
+      font-weight: 700;
+    }
+    .company-container {
+      width: 100%;
+      text-align: center;
+      margin-top: calculator(18, px);
+    }
+    a {
+      color: #faff65;
+      text-decoration: none;
+    }
+  }
+}

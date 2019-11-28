@@ -1,0 +1,285 @@
+.event1 {
+  .container {
+    display: table;
+    margin-top: calculator(144, vw) !important;
+    position: relative;
+  }
+  .msg {
+    display: table;
+    float: left;
+    margin: 1vw 0 0 4vw;
+    position: relative;
+    .bg {
+      width: calculator(505, vw);
+    }
+  }
+  .scroll-wrapper {
+    position: absolute;
+    width: calculator(422, vw);
+    height: calculator(263, vw);
+    top: calculator(100, vw);
+    left: calculator(28, vw);
+    // background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    padding-left: calculator(20, vw);
+    line-height: calculator(25, vw);
+    overflow: hidden;
+    font-size: calculator(18, vw);
+    color: #fd764d
+  }
+  .input-wrapper {
+    position: absolute;
+    width: calculator(425, vw);
+    left: calculator(40, vw);
+    // background: rgba(0,0,0,.3);
+    top: calculator(372, vw);
+
+    .input-msg {
+      float: left;
+      display: table;
+      position: relative;
+      .bg-input {
+        width: calculator(284, vw);
+      }
+      .input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: transparent;
+        border: 0;
+        outline: none;
+        width: 92%;
+        left: 4%;
+        height: 100%;
+        padding: 0;
+        font-size: calculator(18, vw);
+        color: #fd764d;
+      }
+    }
+    .submit {
+      width: calculator(115, vw);
+      float: left;
+      margin: calculator(-1, vw) 0 0 calculator(18, vw);
+    }
+  }
+
+  .receive {
+    display: table;
+    float: left;
+    margin: 14.6vw 0 0 1vw;
+    position: relative;
+    .hide, .gift {
+      width: calculator(168, vw);
+    }
+    .gift {
+      float: left;
+      &.name {
+        font-size: calculator(18, vw);
+        color: #fff;
+        margin-top: calculator(10, vw);
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .wrapper {
+      text-align: center;
+    }
+    .btn {
+      margin: calculator(14, vw) 0 0 calculator(3, vw);
+      width: calculator(158, vw);
+    }
+  }
+
+  .gifts {
+    display: table;
+    margin: 2vw 0 0 27.46667vw;
+    float: left;
+    position: relative;
+    .bg-gifts {
+      width: calculator(500, vw);
+    }
+    .items {
+      width: 100%;
+      position: absolute;
+      left: 1.5vw;
+      top: 3vw;
+      .item {
+        position: relative;
+        float: left;
+        margin: calculator(14, vw) calculator(8, vw);
+        &:nth-child(6) {
+          margin-left: calculator(240, vw);
+        }
+        .icon {
+          width: calculator(102, vw);
+        }
+        .order {
+          position: absolute;
+          width: calculator(20, vw);
+          left: calculator(4, vw);
+          top: calculator(6, vw);
+        }
+        .name {
+          width: 90%;
+          left: 5%;
+          font-size: calculator(13, vw);
+          top: calculator(72, vw);
+          height: calculator(29, vw);
+
+        }
+      }
+    }
+    .btn {
+      position: absolute;
+      width: calculator(173, vw);
+      left: 21vw;
+      top: 25vw;
+      cursor: pointer;
+    }
+
+
+  }
+
+
+  .vw-act-confirm {
+    z-index: 12;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+    .popup-bg-box {
+      width: calculator(700, vw);
+      height: calculator(240, vw);
+    }
+  
+    .wrap-message {
+      z-index: -1;
+      &:nth-of-type(1) {
+        z-index: 0;
+      }
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      transform: translateY(-90%);
+      overflow-wrap: break-word;
+  
+      .message {
+        color: #0976d9;
+        padding: calculator(18, vw) calculator(110, vw) 0 calculator(110, vw);
+        font-size: calculator(28, vw);
+        line-height: calculator(47, vw);
+        font-family: "Tahoma";
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .btn {
+      position: absolute;
+      cursor: pointer;
+      width: calculator(162, vw);
+      &.btn-no {
+        bottom: 4.4vw;
+        left: 22vw;
+      }
+      &.btn-yes {
+        bottom: 4.4vw;
+        left: 51vw;
+      }
+    }
+    .btn-close {
+      .close {
+        cursor: pointer;
+        position: absolute;
+        width: calculator(26, vw);
+        left: 87vw;
+        top: calculator(20, vw);
+        transition: transform 0.3s;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .vw-act-name-list {
+    z-index: 12;
+    color: #0976d9;
+    font-size: calculator(26, vw);
+    font-weight: 700;
+
+    .popup-bg-box {
+      width: calculator(551, vw)
+    }
+
+    .btn-close {
+      .close {
+        cursor: pointer;
+        position: absolute;
+        width: calculator(34, vw);
+        left: calculator(491, vw);
+        top: calculator(25, vw);
+        transition: transform 0.3s;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  
+    .t-wrap {
+      top: calculator(80, vw);
+      left: calculator(42, vw);
+    }
+  
+    .t-head {
+      display: table;
+      // background: rgba($color: #000000, $alpha: 0.4);
+      line-height: calculator(48, vw);
+      .item {
+        float: left;
+        text-align: center;
+        &._1,
+        &._3 {
+          width: calculator(95, vw);
+        }
+        &._2 {
+          width: calculator(263, vw);
+        }
+      }
+    }
+    .t-body {
+      position: absolute;
+      overflow: auto;
+      height: calculator(358, vw);
+      width: calculator(467, vw);
+      // background: rgba($color: #000000, $alpha: 0.4);
+      .scroller {
+        position: relative;
+        display: table;
+      }
+      .line {
+        margin: calculator(10, vw) 0;
+        line-height: calculator(24, vw);
+        // background: rgba($color: #000000, $alpha: 0.4);
+        float: left;
+        .item {
+          float: left;
+          text-align: center;
+          &._1,
+          &._3 {
+            width: calculator(95, vw);
+          }
+          &._2 {
+            word-break: break-all;
+            width: calculator(263, vw);
+          }
+        }
+      }
+    }
+  }
+
+
+}

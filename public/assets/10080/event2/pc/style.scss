@@ -1,0 +1,68 @@
+.event2 {
+  .turntable {
+    position: relative;
+    margin: 306px auto 0 auto;
+    display: table;
+    .filling-img {
+      transition: transform 5s ease-out;
+    }
+    .pointer {
+      position: absolute;
+      top: 211px;
+      left: 234px;
+      cursor: pointer;
+      &.turning {
+        animation: pointer .25s;
+        @keyframes pointer {
+          from {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(.9);
+          }
+          to {
+            transform: scale(1);
+          }
+        }
+      }
+    
+
+    }
+    $txt_width: 320px;
+    .txt {
+      // background: rebeccapurple;
+      font-weight: bold;
+      line-height: 48px;
+      color: #1560a5;
+      position: absolute;
+
+      width: $txt_width;
+      text-align: center;
+
+      .sp {
+        position: relative;
+        line-height: 48px;
+        font-size: 28px;
+        left: 258px;
+        top: -19px;
+        text-align: left;
+      }
+    }
+    .l-txt {
+      left: - $txt_width - (-30);
+      font-size: 40px;
+      top: 261px;
+      /* background: red; */
+      width: 268px;
+      // .lo {
+      //   font-size: 26px;
+      // }
+    }
+    .r-txt {
+      top: 242px;
+      right: - $txt_width - (-75);
+      font-size: 23px;
+    }
+  }
+  
+}

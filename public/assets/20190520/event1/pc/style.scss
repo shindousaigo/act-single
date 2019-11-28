@@ -1,0 +1,53 @@
+.event1 {
+  .vw-act-gifts {
+    display: flex;
+    .gift {
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 260px;
+        left: 396px;
+      }
+      &:nth-child(2) {
+        top: 400px;
+        left: 15px;
+      }
+      &:nth-child(3) {
+        top: 400px;
+        right: 15px;  
+      }
+
+      .rewards {
+        position: absolute;
+        top: 0;
+      }
+      .reward {
+        z-index: 3;
+        display: block;
+        position: relative;
+        float: left;
+        margin: -56px -30px 0 73px;
+        .reward-name {
+          width: 128%;
+          left: -14%;
+          font-size: 18px;
+          line-height: 22px;
+          position: absolute;
+          height: 38px;
+          top: 117px;
+        }
+      }
+      .btn {
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        margin-left: -122.5px;
+      }
+    }
+  
+  }
+}
